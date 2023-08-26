@@ -1,0 +1,99 @@
+
+
+local function generateRandomString(length)
+    local charSet = {}
+    for i = 48, 57 do -- ASCII values for numbers 0-9
+        table.insert(charSet, string.char(i))
+    end
+    for i = 65, 90 do -- ASCII values for uppercase letters A-Z
+        table.insert(charSet, string.char(i))
+    end
+    for i = 97, 122 do -- ASCII values for lowercase letters a-z
+        table.insert(charSet, string.char(i))
+    end
+
+    local randomString = ""
+    for _ = 1, length do
+        local randomIndex = math.random(1, #charSet)
+        randomString = randomString .. charSet[randomIndex]
+    end
+    return randomString
+end
+
+local randomString = generateRandomString(10)
+
+print("Zylic: " .. randomString)
+print("This is the game_id. If it does not match the required id then the script will not work.
+
+
+
+
+
+
+
+
+
+
+local adoptmeversion = "d27bee6"
+
+
+
+
+--the script--
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Libraries/main/Shaman/Library.lua'))()
+local Flags = Library.Flags
+
+local Window = Library:Window({
+    Text = "ZylicV4"
+})
+
+local Tab = Window:Tab({
+    Text = "Main"
+})
+
+
+
+
+local Section = Tab:Section({
+    Text = "Pets"
+})
+
+local Section2 = Tab:Section({
+    Text = "Cash"
+})
+
+local a = Section2:Toggle({
+    Text = "Loop Dupe Cash",
+    Callback = function(v)
+end
+})
+
+local a2 = Section:Toggle({
+    Text = "Pet Ager",
+    Callback = function(v)
+end
+})
+
+
+
+
+
+Section2:Button({
+    Text = "Dupe Equipped Pet",
+    Tooltip = "V2"
+    Callback = function(v)
+
+})
+
+
+
+
+
+
+local Section2 = Tab:Section({
+    Text = "Games"
+})
+
+end
+rconsoleinfo("KEY INCORRECT")
+rconsoleinfo("RE-EXECUTE the script.")
